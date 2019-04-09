@@ -1,0 +1,87 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.5,
+  "files.trimTrailingWhitespace": true,
+  "editor.fontWeight": "400",
+  // this isn't really underline-thin but we hack it to be a thicker cursor
+  //"editor.cursorStyle": "underline-thin",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "none",
+  "sync.gist": "75a264374a549d83d69c9bfd1516e728",
+  "sync.lastUpload": "2018-07-19T16:57:24.281Z",
+  "sync.autoDownload": false,
+  "sync.autoUpload": true,
+  "sync.lastDownload": "",
+  "sync.forceDownload": false,
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "window.zoomLevel": 0,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "alternate",
+  "workbench.colorCustomizations": {
+    //"editor.background": "#282c35",
+    //"sideBar.background": "#282c35"
+  },
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true,
+    "other": true
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "inline",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "plaintext": "jade"
+  },
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+  "editor.formatOnSave": true,
+  // Enable/disable default JavaScript formatter (For Prettier)
+  "javascript.format.enable": false,
+  // Use 'prettier-eslint' instead of 'prettier'. Other settings will only be fallbacks in case they could not be inferred from eslint rules.
+  "prettier.eslintIntegration": true,
+  "editor.minimap.enabled": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+  //"typescript.tsdk": "/usr/local/lib/node_modules/typescript/bin/tsserver",
+}
