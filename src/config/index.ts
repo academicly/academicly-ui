@@ -4,7 +4,7 @@ import prodConfig from './prod.json';
 
 class Config {
   public getEnvConfig() {
-    if (process.env.NODE_ENV !== 'development') {
+    if (process.env.NODE_ENV === 'production') {
       return this.prodConfig();
     }
 
