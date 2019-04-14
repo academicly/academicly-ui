@@ -2,6 +2,10 @@ import devConfig from './dev.json';
 import testConfig from './test.json';
 import prodConfig from './prod.json';
 
+/**
+ * Should be used for loading runtime specific configs
+ * For built time config, use .env files
+ */
 class Config {
   public getEnvConfig() {
     if (process.env.NODE_ENV === 'production') {
