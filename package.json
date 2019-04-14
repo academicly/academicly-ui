@@ -13,6 +13,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage",
+    "test:onlyChanged": "react-scripts test --onlyChanged",
+    "test:ci": "CI=true react-scripts test",
+    "test:ci:coverage": "CI=true react-scripts test --coverage",
+    "test:ci:onlyChanged": "CI=true react-scripts test --onlyChanged",
     "eject": "react-scripts eject",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
     "lint-staged": "lint-staged"
@@ -44,7 +49,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test:ci"
     }
   },
   "lint-staged": {
