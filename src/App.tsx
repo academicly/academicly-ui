@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Layout } from "antd";
+import LoggedIn from "./pages/LoggedIn";
+import LoggedOut from "./pages/LoggedOut";
+import { AuthProvider } from "./providers/AuthProvider";
+import { useAuth } from "./hooks";
+import "./App.css";
+import "antd/dist/antd.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => {
+  const { isLoggedIn } = useAuth();
+  return (
+    <div className="App-container">
+      <Layout>{isLoggedIn ? <LoggedIn /> : <LoggedOut />}</Layout>
+    </div>
+  );
+};
 
-export default App;
+const RootApp = () => (
+  <AuthProvider>
+    <App />
+  </AuthProvider>
+);
+export default RootApp;
