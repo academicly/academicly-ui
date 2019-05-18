@@ -1,33 +1,85 @@
-.App {
+:root {
+  --fontSize: 1rem;
+  --defaultColor: hsl(197, 10%, 45%);
+  --defaultBackground: #fff;
+  --defaultOffColor: hsl(240, 6%, 97%);
+  --defaultShadow: rgba(0, 0, 0, 0.15);
+  --defaultBreak: 640px;
+  --color-code-green: #b5f4a5;
+  --color-code-yellow: #ffe484;
+  --color-code-purple: #d9a9ff;
+  --color-code-red: #ff8383;
+  --color-code-blue: #93ddfd;
+}
+
+body {
+  color: var(--defaultColor);
+  font-size: var(--fontSize);
+}
+
+.App-container {
+  min-height: 100vh;
+  background-color: var(--defaultBackground);
+}
+
+.loginForm-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.loggedin-layout {
+  margin-top: 64px;
+  background-color: var(--defaultBackground);
+}
+
+.loggedOut {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+}
+
+.loggedOut-box {
+  margin: 0 2rem;
+  align-self: center;
+  justify-content: center;
+  width: 350px;
+  background: #fff;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px 0 var(--defaultShadow);
+  transition: all 0.5s ease-in;
+}
+.loggedOut .ant-tabs-nav-container {
+  background: var(--defaultOffColor);
+  height: 72px !important;
+  padding: 1rem 1.5rem;
+  border: none;
+  flex: 1 1;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.loginForm {
+  width: 100%;
+  max-width: 300px;
+}
+.loginForm-forgot {
+  float: right;
+}
+.loginForm-button {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about {
+  margin: 0 2rem;
+  width: 200px;
+  transition: all 0.5s ease-in;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 640px) {
+  .about {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .loggedOut {
+    padding-top: 15%;
   }
 }
