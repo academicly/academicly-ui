@@ -15,9 +15,9 @@ const PrimaryMenu = ({
         Home
       </Link>
     </Menu.Item>
-    <Menu.Item key="colleges">
-      <Link to="/colleges" onClick={onPress}>
-        Colleges
+    <Menu.Item key="universities">
+      <Link to="/universities" onClick={onPress}>
+        Universities
       </Link>
     </Menu.Item>
   </Menu>
