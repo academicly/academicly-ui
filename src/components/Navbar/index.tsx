@@ -20,10 +20,7 @@ const Navbar = () => {
       }}
     >
       <nav className="menuBar">
-        <div
-          className="menuContent"
-          style={{ maxWidth: "1280px", margin: "auto" }}
-        >
+        <div className="menuContent">
           <div className="logo">
             <img src={logo} />
           </div>

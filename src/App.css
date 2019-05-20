@@ -22,10 +22,6 @@ body {
   background-color: var(--defaultBackground);
 }
 
-.App-container > .ant-layout {
-  background: var(--defaultBackground);
-}
-
 .loginForm-container {
   display: flex;
   justify-content: center;
@@ -55,7 +51,6 @@ body {
   box-shadow: 1px 1px 5px 0 var(--defaultShadow);
   transition: all 0.5s ease-in;
 }
-
 .loggedOut .ant-tabs-nav-container {
   background: var(--defaultOffColor);
   height: 72px !important;
@@ -64,16 +59,13 @@ body {
   flex: 1 1;
   text-align: center;
 }
-
 .loginForm {
   width: 100%;
   max-width: 300px;
 }
-
 .loginForm-forgot {
   float: right;
 }
-
 .loginForm-button {
   width: 100%;
 }
@@ -83,12 +75,10 @@ body {
   width: 200px;
   transition: all 0.5s ease-in;
 }
-
 @media screen and (max-width: 640px) {
   .about {
     display: none;
   }
-
   .loggedOut {
     padding-top: 15%;
   }
