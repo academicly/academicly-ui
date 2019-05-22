@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import PrimaryMenu from "./PrimaryMenu";
 import SecondaryMenu from "./SecondaryMenu";
 import { Drawer, Button, Layout, Icon } from "antd";
+import "antd/dist/antd.css";
 import "./navbar.css";
 import logo from "../../assets/academicly.blue.png";
 const Navbar = () => {

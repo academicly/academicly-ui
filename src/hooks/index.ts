@@ -1,3 +1,4 @@
 export { useAuth } from "./useAuth";
-export { useStorage } from "./useStorage";
+export { useLocalStorage } from "./useLocalStorage";
 export { useCookies } from "./useCookies";
+export { useFetch } from "./useFetch";
