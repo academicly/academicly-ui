@@ -23,6 +23,7 @@
     "test:ci:onlyChanged": "CI=true react-scripts test --onlyChanged",
     "eject": "react-scripts eject",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx,js,jsx}' --fix",
     "lint-staged": "lint-staged",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -c .storybook"
@@ -67,7 +68,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
+      "eslint --fix",
       "git add"
     ]
   }

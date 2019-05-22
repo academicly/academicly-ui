@@ -1,9 +1,9 @@
-import React from "react";
-import { Menu } from "antd";
-import { Link } from "@reach/router";
+import React from 'react';
+import { Menu } from 'antd';
+import { Link } from '@reach/router';
 
 const SecondaryMenu = ({
-  mode = "horizontal",
+  mode = 'horizontal',
   onPress
 }: {
   mode?: any;

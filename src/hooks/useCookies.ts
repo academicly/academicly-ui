@@ -1,5 +1,5 @@
-import { useState, useEffect, useCallback } from "react";
-import * as Cookies from "js-cookie";
+import { useState, useEffect, useCallback } from 'react';
+import * as Cookies from 'js-cookie';
 
 /**
  * useCookies - to get/set cookies

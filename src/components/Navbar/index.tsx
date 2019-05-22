@@ -1,29 +1,29 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from "react";
-import PrimaryMenu from "./PrimaryMenu";
-import SecondaryMenu from "./SecondaryMenu";
-import { Drawer, Button, Layout, Icon } from "antd";
-import "antd/dist/antd.css";
-import "./navbar.css";
-import logo from "../../assets/academicly.blue.png";
+import React, { useState } from 'react';
+import PrimaryMenu from './PrimaryMenu';
+import SecondaryMenu from './SecondaryMenu';
+import { Drawer, Button, Layout, Icon } from 'antd';
+import 'antd/dist/antd.css';
+import './navbar.css';
+import logo from '../../assets/academicly.blue.png';
 const Navbar = () => {
   const [toggled, setToggle] = useState(false);
 
   return (
     <Layout.Header
       style={{
-        position: "fixed",
+        position: 'fixed',
         zIndex: 1,
-        width: "100%",
+        width: '100%',
         padding: 0,
         marginBottom: 0,
-        backgroundColor: "#fff"
+        backgroundColor: '#fff'
       }}
     >
       <nav className="menuBar">
         <div
           className="menuContent"
-          style={{ maxWidth: "1280px", margin: "auto" }}
+          style={{ maxWidth: '1280px', margin: 'auto' }}
         >
           <div className="logo">
             <img src={logo} />
@@ -35,7 +35,7 @@ const Navbar = () => {
             <SecondaryMenu />
           </div>
           <Button
-            style={{ margin: 0, marginTop: "15px" }}
+            style={{ margin: 0, marginTop: '15px' }}
             className="barsMenu"
             onClick={() => {
               setToggle(true);

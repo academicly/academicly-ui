@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from 'react';
 
 interface ReturnType {
   loading: boolean;
@@ -9,10 +9,10 @@ interface ReturnType {
 }
 
 const defaultOptions: RequestInit = {
-  method: "GET",
-  credentials: "include",
+  method: 'GET',
+  credentials: 'include',
   headers: {
-    "Content-Type": "application/json"
+    'Content-Type': 'application/json'
   }
 };
 
@@ -26,7 +26,7 @@ const defaultOptions: RequestInit = {
  */
 export const useFetch = (
   url: string,
-  type = "GET",
+  type = 'GET',
   postData = null,
   options = defaultOptions,
   cache = false

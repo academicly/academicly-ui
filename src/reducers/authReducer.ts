@@ -1,5 +1,5 @@
-import { User, ErrorMessage } from "../types";
-import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGIN_LOAD } from "./actions";
+import { User, ErrorMessage } from '../types';
+import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGIN_LOAD } from './actions';
 
 export const initialState = {
   isLoggedIn: false,

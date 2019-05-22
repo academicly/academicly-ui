@@ -1,6 +1,6 @@
-import React from "react";
-import "./home.css";
-import logo from "../../assets/academicly.purple.png";
+import React from 'react';
+import './home.css';
+import logo from '../../assets/academicly.purple.png';
 
 const Home = () => (
   <main id="mainContent">
