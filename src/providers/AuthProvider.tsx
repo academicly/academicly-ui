@@ -1,5 +1,5 @@
-import React, { createContext, useReducer, useContext, ReactNode } from "react";
-import { authReducer, initialState } from "../reducers/authReducer";
+import React, { createContext, useReducer, useContext, ReactNode } from 'react';
+import { authReducer, initialState } from '../reducers/authReducer';
 
 const Context = createContext<any>({});
 

@@ -1,6 +1,6 @@
-import React from "react";
-import { Layout } from "antd";
-import CollegeList from "../components/CollegeList";
+import React from 'react';
+import { Layout } from 'antd';
+import CollegeList from '../components/CollegeList';
 
 interface PropType {
   default?: boolean;

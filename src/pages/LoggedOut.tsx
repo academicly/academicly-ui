@@ -1,26 +1,26 @@
-import React, { useState, useCallback, ReactNode } from "react";
-import { Tabs, Layout } from "antd";
-import { Location, navigate } from "@reach/router";
-import LoginForm from "../components/LoginForm";
-import RegisterForm from "../components/RegisterForm";
-import About from "../components/About";
-import Navbar from "../components/Navbar";
+import React, { useState, useCallback, ReactNode } from 'react';
+import { Tabs, Layout } from 'antd';
+import { Location, navigate } from '@reach/router';
+import LoginForm from '../components/LoginForm';
+import RegisterForm from '../components/RegisterForm';
+import About from '../components/About';
+import Navbar from '../components/Navbar';
 
 const LoggedOut = (props: any) => {
   const getActiveKey = useCallback(() => {
     const key =
-      props.location && props.location.pathname === "/register" ? "2" : "1";
+      props.location && props.location.pathname === '/register' ? '2' : '1';
     return key;
   }, [props.location]);
 
   const [defaultKey] = useState(() => getActiveKey());
 
   const tabClick = (input: string) => {
-    if (input === "1") {
-      navigate("/login");
+    if (input === '1') {
+      navigate('/login');
     }
-    if (input === "2") {
-      navigate("/register");
+    if (input === '2') {
+      navigate('/register');
     }
   };
 

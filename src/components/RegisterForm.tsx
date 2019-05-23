@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
-import { Button, Form, Input, Checkbox, Icon } from "antd";
-import { login } from "../services/auth";
-import { Link } from "@reach/router";
+import React, { useState, useRef } from 'react';
+import { Button, Form, Input, Checkbox, Icon } from 'antd';
+import { login } from '../services/auth';
+import { Link } from '@reach/router';
 
 const RegisterForm = (props: {
   form: {
@@ -28,7 +28,7 @@ const RegisterForm = (props: {
     event.preventDefault();
     validateFieldsAndScroll((err: any, values: any) => {
       if (!err) {
-        console.log("Received values of form: ", values);
+        console.log('Received values of form: ', values);
       }
     });
 
@@ -46,8 +46,8 @@ const RegisterForm = (props: {
     value: any,
     callback: { (arg0: string): void; (): void }
   ) => {
-    if (value && value !== getFieldValue("password")) {
-      callback("Two passwords that you enter is inconsistent!");
+    if (value && value !== getFieldValue('password')) {
+      callback('Two passwords that you enter is inconsistent!');
     } else {
       callback();
     }
@@ -55,7 +55,7 @@ const RegisterForm = (props: {
 
   const validateToNextPassword = (value: any, callback: () => void) => {
     if (value) {
-      validateFields(["confirm"], { force: true });
+      validateFields(['confirm'], { force: true });
     }
     callback();
   };
@@ -78,30 +78,30 @@ const RegisterForm = (props: {
 
       <Form onSubmit={handleRegister} className="loginForm">
         <Form.Item>
-          {getFieldDecorator("email", {
+          {getFieldDecorator('email', {
             rules: [
               {
-                type: "email",
-                message: "The input is not valid E-mail!"
+                type: 'email',
+                message: 'The input is not valid E-mail!'
               },
               {
                 required: true,
-                message: "Please enter your E-mail!"
+                message: 'Please enter your E-mail!'
               }
             ]
           })(
             <Input
-              prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
+              prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
               placeholder="example@email.com"
             />
           )}
         </Form.Item>
         <Form.Item>
-          {getFieldDecorator("password", {
+          {getFieldDecorator('password', {
             rules: [
               {
                 required: true,
-                message: "Please enter your password!"
+                message: 'Please enter your password!'
               },
               {
                 validator: validateToNextPassword
@@ -109,18 +109,18 @@ const RegisterForm = (props: {
             ]
           })(
             <Input
-              prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+              prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
               type="password"
               placeholder="Password"
             />
           )}
         </Form.Item>
         <Form.Item>
-          {getFieldDecorator("confirm", {
+          {getFieldDecorator('confirm', {
             rules: [
               {
                 required: true,
-                message: "Please confirm your password!"
+                message: 'Please confirm your password!'
               },
               {
                 validator: compareToFirstPassword
@@ -128,7 +128,7 @@ const RegisterForm = (props: {
             ]
           })(
             <Input
-              prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+              prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
               type="password"
               placeholder="Confirm password"
               onBlur={handleConfirmBlur}
@@ -136,8 +136,8 @@ const RegisterForm = (props: {
           )}
         </Form.Item>
         <Form.Item>
-          {getFieldDecorator("agreement", {
-            valuePropName: "checked"
+          {getFieldDecorator('agreement', {
+            valuePropName: 'checked'
           })(
             <Checkbox>
               I have read the <Link to="terms">terms & conditions.</Link>
@@ -154,4 +154,4 @@ const RegisterForm = (props: {
   );
 };
 
-export default Form.create({ name: "register" })(RegisterForm);
+export default Form.create({ name: 'register' })(RegisterForm);

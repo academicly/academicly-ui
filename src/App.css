@@ -5,11 +5,30 @@
   --defaultOffColor: hsl(240, 6%, 97%);
   --defaultShadow: rgba(0, 0, 0, 0.15);
   --defaultBreak: 640px;
-  --color-code-green: #b5f4a5;
-  --color-code-yellow: #ffe484;
-  --color-code-purple: #d9a9ff;
-  --color-code-red: #ff8383;
-  --color-code-blue: #93ddfd;
+
+  --primary-accent-color: hsl(245, 89%, 65%); /* use for primary color*/
+  --secondary-color: hsl(207, 22%, 81%); /* use for opposite color to primary*/
+  --primary-shade-color: hsl(
+    244,
+    85%,
+    87%
+  ); /* use for shades/underline of primary*/
+  --primary-bg-color: hsl(0, 0%, 100%); /* use for main page bg*/
+  --secondary-bg-color: hsl(206, 28%, 90%); /* use for nabvbar bg color*/
+  --primary-border-color: hsl(
+    207,
+    22%,
+    81%
+  ); /* use for borders to separate section*/
+  --primary-success-color: hsl(174, 74%, 39%);
+  --primary-fail-color: hsl(351, 62%, 55%);
+  --primary-text-color: hsl(208, 25%, 22%); /* primary large texts */
+  --secondary-text-color: hsl(208, 13%, 53%); /* use for large texts*/
+  --font-size-lg: 1.5rem; /*24 px*/
+  --font-size-md: 1rem; /*16 px*/
+  --font-size-sm: 0.7rem; /* 11.2px*/
+  --font-weight: 400;
+  --line-height: 1.5rem; /* use when using font-size-large*/
 }
 
 body {

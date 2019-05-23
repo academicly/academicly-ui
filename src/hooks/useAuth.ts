@@ -1,13 +1,13 @@
-import { useEffect } from "react";
-import { useAuthContext } from "../providers/AuthProvider";
-import { LOGIN_LOAD } from "../reducers/actions";
-import { login } from "../services/auth";
-
+import { useEffect } from 'react';
+import { useAuthContext } from '../providers/AuthProvider';
+import { LOGIN_LOAD } from '../reducers/actions';
+import { login } from '../services/auth';
+import useCookies from './useCookies';
 export const useAuth = () => {
   const [{ isLoggedIn, user }, dispatch] = useAuthContext();
   useEffect(() => {
     const loginUser = async () => {
-      const res = login("", "");
+      const res = login('', '');
       if (res) {
         dispatch({
           type: LOGIN_LOAD,

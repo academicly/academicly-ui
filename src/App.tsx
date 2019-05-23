@@ -1,11 +1,11 @@
-import React from "react";
-import { Layout } from "antd";
-import LoggedIn from "./pages/LoggedIn";
-import LoggedOut from "./pages/LoggedOut";
-import { AuthProvider } from "./providers/AuthProvider";
-import { useAuth } from "./hooks";
-import "./App.css";
-import "antd/dist/antd.css";
+import React from 'react';
+import { Layout } from 'antd';
+import LoggedIn from './pages/LoggedIn';
+import LoggedOut from './pages/LoggedOut';
+import { AuthProvider } from './providers/AuthProvider';
+import { useAuth } from './hooks';
+import './App.css';
+import 'antd/dist/antd.css';
 
 const App = () => {
   const { isLoggedIn } = useAuth();

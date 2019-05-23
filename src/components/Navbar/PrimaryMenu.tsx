@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "@reach/router";
-import { Menu } from "antd";
+import React from 'react';
+import { Link } from '@reach/router';
+import { Menu } from 'antd';
 
 const PrimaryMenu = ({
-  mode = "horizontal",
+  mode = 'horizontal',
   onPress
 }: {
   mode?: any;

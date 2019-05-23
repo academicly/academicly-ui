@@ -13,5 +13,5 @@ export interface ErrorMessage {
 }
 
 export interface AuthAction {
-  type: "AUTH_SUCCESS" | "AUTH_FAILURE";
+  type: 'AUTH_SUCCESS' | 'AUTH_FAILURE';
 }

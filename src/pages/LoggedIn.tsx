@@ -1,11 +1,11 @@
-import React from "react";
-import { Router } from "@reach/router";
-import { Layout } from "antd";
-import Home from "./Home";
-import Universities from "./Universities";
-import PageNotFound from "./PageNotFound";
-import NavBar from "../components/Navbar";
-import CollegeAISession from "../components/CollegeAISession";
+import React from 'react';
+import { Router } from '@reach/router';
+import { Layout } from 'antd';
+import Home from './Home';
+import Universities from './Universities';
+import PageNotFound from './PageNotFound';
+import NavBar from '../components/Navbar';
+import CollegeAISession from '../components/CollegeAISession';
 
 const LoggedIn = () => (
   <React.Fragment>
@@ -13,11 +13,11 @@ const LoggedIn = () => (
     <CollegeAISession />
     <Layout.Content
       style={{
-        paddingTop: "70px",
-        maxWidth: "1280px",
-        width: "100%",
-        margin: "auto",
-        display: "inline-block"
+        paddingTop: '70px',
+        maxWidth: '1280px',
+        width: '100%',
+        margin: 'auto',
+        display: 'inline-block'
       }}
       className="loggedin-layout"
     >
