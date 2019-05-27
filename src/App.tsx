@@ -4,8 +4,7 @@ import LoggedIn from './pages/LoggedIn';
 import LoggedOut from './pages/LoggedOut';
 import { AuthProvider } from './providers/AuthProvider';
 import { useAuth } from './hooks';
-import './App.css';
-import 'antd/dist/antd.css';
+import './styles/App.less';
 
 const App = () => {
   const { isLoggedIn } = useAuth();

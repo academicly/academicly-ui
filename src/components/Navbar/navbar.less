@@ -1,0 +1,122 @@
+@color_1: currentcolor;
+@border_bottom_color_1: transparent;
+
+.menuBar {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  background: var(--bg-color);
+  overflow: hidden;
+  height: none;
+}
+.logo {
+  float: left;
+  height: 100%;
+  margin: 21px;
+}
+.menuContent {
+  align-self: center;
+  width: 100%;
+  float: left;
+  .ant-menu-item {
+    padding: 0px 5px;
+    a {
+      padding: 10px 15px;
+    }
+  }
+  .ant-menu-submenu-title {
+    padding: 10px 20px;
+    a {
+      padding: 10px 15px;
+    }
+  }
+  .ant-menu-horizontal {
+    border-bottom: none;
+  }
+  .primaryMenu {
+    float: left;
+  }
+  .secondaryMenu {
+    float: right;
+  }
+}
+.barsMenu {
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  margin-right: -1rem;
+  margin-top: 0.7rem;
+  background: none;
+}
+.barsBtn {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+  top: -11px;
+}
+.ant-drawer-body {
+  padding: 0;
+  .ant-menu-horizontal {
+    > .ant-menu-item {
+      display: inline-block;
+      width: 100%;
+      &:hover {
+        border-bottom-color: @border_bottom_color_1;
+      }
+    }
+    > .ant-menu-submenu {
+      display: inline-block;
+      width: 100%;
+    }
+    border-bottom: none;
+  }
+}
+.login-button {
+  color: @color_1;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+@media (min-width: 768px) {
+  .barsMenu {
+    display: none !important;
+  }
+  .register-button {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    .logo-svg {
+      #logo-text {
+        display: none;
+      }
+    }
+  }
+  .ant-menu-vertical {
+    border: none !important;
+  }
+  .menuBar {
+    height: inherit;
+  }
+  .primaryMenu {
+    display: none;
+  }
+  .secondaryMenu {
+    display: none;
+  }
+  .menuContent {
+    .ant-menu-item {
+      padding: 1px 20px;
+    }
+    .ant-menu-submenu-title {
+      padding: 1px 20px;
+    }
+  }
+}

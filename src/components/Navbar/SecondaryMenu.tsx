@@ -11,11 +11,11 @@ const SecondaryMenu = ({
 }) => (
   <Menu mode={mode}>
     <Menu.Item key="login">
-      <Link to="/login" onClick={onPress}>
-        Login
+      <Link to="/login" onClick={onPress} className="login-button">
+        Log in
       </Link>
     </Menu.Item>
-    <Menu.Item key="register">
+    <Menu.Item key="register" className="register-button">
       <Link to="/register" onClick={onPress}>
         Register
       </Link>

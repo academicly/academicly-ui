@@ -1,0 +1,74 @@
+@color_1: var(--default-color);
+@background_color_1: var(--default-background);
+
+body {
+  color: @color_1;
+  font-size: var(--fontSize);
+  &::selection {
+    background: var(--primary-color) !important;
+  }
+}
+.App-container {
+  min-height: 100vh;
+  background-color: @background_color_1;
+  > .ant-layout {
+    background: var(--default-background);
+  }
+}
+.loginForm-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.loggedin-layout {
+  margin-top: 64px;
+  background-color: @background_color_1;
+}
+.loggedOut {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+  .ant-tabs-nav-container {
+    background: var(--defaultoff-color);
+    height: 72px !important;
+    padding: 1rem 1.5rem;
+    border: none;
+    flex: 1 1;
+    text-align: center;
+  }
+}
+.loggedOut-box {
+  margin: 0 2rem;
+  align-self: center;
+  justify-content: center;
+  width: 350px;
+  background: #fff;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px 0 var(--default-shadow);
+  transition: all 0.5s ease-in;
+}
+.loginForm {
+  width: 100%;
+  max-width: 300px;
+}
+.loginForm-forgot {
+  float: right;
+}
+.loginForm-button {
+  width: 100%;
+}
+.about {
+  margin: 0 2rem;
+  width: 200px;
+  transition: all 0.5s ease-in;
+}
+@media screen and (max-width: 640px) {
+  .about {
+    display: none;
+  }
+  .loggedOut {
+    padding-top: 15%;
+  }
+}

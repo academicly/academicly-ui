@@ -1,0 +1,42 @@
+/* The below colors are just to override ant-design*/
+@primary-color: hsl(239, 71%, 65%); // primary color for all components
+@link-color: hsl(245, 89%, 65%); // link color
+@success-color: hsl(158, 67%, 42%); // success state color
+@warning-color: hsl(18, 100%, 74%); // warning state color
+@error-color: hsl(4, 72%, 60%); // error state color
+@font-size-base: 16px; // major text font size
+//@heading-color: hsl(208, 25%, 22%); // heading text color
+//@text-color: hsl(208, 25%, 15%); // major text color
+//@text-color-secondary: hsl(208, 13%, 30%); // secondary text color
+//@disabled-color : rgba(0, 0, 0, .25); // disable state color
+//@border-radius-base: 4px; // major border radius
+//@border-color-base: #d9d9d9; // major border color
+//@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // major shadow for layers
+
+/* We will always use css variables in both js, css, and less*/
+&:root {
+  --font-size: 1rem;
+  --default-color: hsl(197, 10%, 45%);
+  --default-background: #fff;
+  --defaultoff-color: hsl(240, 6%, 97%);
+  --default-shadow: rgba(0, 0, 0, 0.15);
+  --default-break: 640px;
+  --primary-color: @primary-color;
+  --secondary-color: hsl(207, 22%, 81%);
+  --accent-color: hsl(244, 85%, 87%);
+  --bg-color: hsl(0, 0%, 100%);
+  --secondary-bg-color: hsl(206, 28%, 90%);
+  --primary-border-color: hsl(207, 22%, 81%);
+  --success-color: @success-color;
+  --warning-color: @warning-color;
+  --error-color: @error-color;
+  --heading-color: hsl(240, 30%, 28);
+  --text-color: hsl(233, 26%, 35%);
+  --text-color-secondary: hsl(215, 16%, 50%);
+  --text-color-white: rgb(255, 255, 255);
+  --font-size-lg: 1.5rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.7rem;
+  --font-weight: 400;
+  --line-height: 1.5rem;
+}

@@ -1,9 +1,9 @@
 import { configure } from '@storybook/react';
+import './theme.less';
 
-const req = require.context('../src/stories', true, /\.js$/);
-
+const req = require.context('../src', true, /\.stories\.(js|jsx|ts|tsx)$/);
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach(req);
 }
 
 configure(loadStories, module);

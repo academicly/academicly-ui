@@ -8,7 +8,15 @@ interface PropType {
 }
 
 const Universities = (props: PropType) => (
-  <div>
+  <div
+    style={{
+      paddingTop: '70px',
+      maxWidth: '1280px',
+      width: '100%',
+      margin: 'auto',
+      display: 'inline-block'
+    }}
+  >
     <CollegeList />
   </div>
 );

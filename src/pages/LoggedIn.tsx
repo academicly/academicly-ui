@@ -9,18 +9,9 @@ import CollegeAISession from '../components/CollegeAISession';
 
 const LoggedIn = () => (
   <React.Fragment>
-    <NavBar />
+    <NavBar isLoggedIn />
     <CollegeAISession />
-    <Layout.Content
-      style={{
-        paddingTop: '70px',
-        maxWidth: '1280px',
-        width: '100%',
-        margin: 'auto',
-        display: 'inline-block'
-      }}
-      className="loggedin-layout"
-    >
+    <Layout.Content className="loggedin-layout">
       <Router>
         <Home path="/" />
         <PageNotFound default path="/404" />
