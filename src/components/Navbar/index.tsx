@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import PrimaryMenu from './PrimaryMenu';
 import SecondaryMenu from './SecondaryMenu';
-import { Drawer, Button, Layout, Icon } from 'antd';
+import { Drawer, Layout, Icon } from 'antd';
 import { Link } from '@reach/router';
 import './navbar.less';
 import Logo from '../Logo';

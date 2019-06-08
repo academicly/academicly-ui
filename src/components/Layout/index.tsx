@@ -1,5 +1,3 @@
-import { styled } from 'linaria/react';
-
 const sizes = {
   xs: 480,
   sm: 768,
